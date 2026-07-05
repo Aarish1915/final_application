@@ -93,15 +93,9 @@ export default function ReservePage() {
       setSubmitted(true);
       setTimeout(() => { window.location.href = "/"; }, 3000);
     } catch (err) {
-      console.warn("Server reservation failed, saving locally:", err);
-      try {
-        const saved = JSON.parse(localStorage.getItem("pendingReservations") || "[]");
-        saved.push({ ...form, guests: parseInt(form.guests), createdAt: new Date().toISOString() });
-        localStorage.setItem("pendingReservations", JSON.stringify(saved));
-      } catch { /* ignore */ }
+      console.error("Server reservation failed:", err);
+      setError(err instanceof Error ? err.message : "Failed to connect to the server. Please check if your backend is running.");
       window.scrollTo({ top: 0, behavior: "smooth" });
-      setSubmitted(true);
-      setTimeout(() => { window.location.href = "/"; }, 3000);
     } finally {
       setLoading(false);
     }
