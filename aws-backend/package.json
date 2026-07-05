@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "node --experimental-vm-modules -r dotenv/config node_modules/jest/bin/jest.js",
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest",
     "start": "node src/server.mjs",
     "start:prod": "pm2-runtime start ecosystem.config.cjs --env production",
     "postinstall": "prisma generate"
