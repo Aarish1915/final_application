@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"d:\\\\Projects\\\\ingri-world\\\\ingri-world\" -Recurse -Directory -ErrorAction SilentlyContinue | Where-Object { $_.Name -match '^\\(lambda|functions|handlers|serverless|api\\)$' } | Select-Object -ExpandProperty FullName)",
+      "PowerShell(Get-ChildItem -Path \"d:\\\\Projects\\\\ingri-world\\\\ingri-world\" -Recurse -File -ErrorAction SilentlyContinue | Where-Object { $_.Name -match '\\(aws|lambda|serverless\\)' -and $_.FullName -notmatch 'node_modules' } | Select-Object -ExpandProperty FullName)"
+    ]
+  }
+}

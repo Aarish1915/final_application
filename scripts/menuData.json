@@ -1,0 +1,241 @@
+{
+  "sections": [
+    {
+      "title": "BREAKFAST (8 AM – 12 PM)",
+      "slug": "breakfast",
+      "items": [
+        { "name": "Classic Cappuccino", "price": 290 },
+        { "name": "Latte", "price": 290 },
+        { "name": "Flat White", "price": 320 },
+        { "name": "Americano", "price": 290 },
+        { "name": "Mocha", "price": 290 },
+        { "name": "Cortado", "price": 290 },
+        { "name": "Double Espresso", "price": 290 },
+        { "name": "Single Estate Coffee", "price": 290 },
+        { "name": "Add syrup (Vanilla / Hazelnut / Caramel)", "price": 90 }
+      ]
+    },
+    {
+      "title": "TEAS & MORE",
+      "slug": "teas",
+      "items": [
+        { "name": "Assam Masala Tea with Pure Saffron", "price": 250 },
+        { "name": "Kashmiri Kahwa", "price": 250 },
+        { "name": "Mango Turmeric Green Tea", "price": 250 },
+        { "name": "Blue Pea Flower Tea", "price": 250 },
+        { "name": "Hibiscus Mint Green Tea", "price": 250 },
+        { "name": "Makaibari Darjeeling Black Tea", "price": 250 },
+        { "name": "Ginger Honey Lemon Tea", "price": 250 },
+        { "name": "Matcha Latte", "price": 330 },
+        { "name": "Hot Chocolate Couverture", "price": 330 }
+      ]
+    },
+    {
+      "title": "COLD BEVERAGES",
+      "slug": "cold-beverages",
+      "items": [
+        { "name": "Iced Latte", "price": 310 },
+        { "name": "Iced Americano", "price": 310 },
+        { "name": "Classic Cold Coffee", "price": 360 },
+        { "name": "Vegan Cold Coffee", "price": 380 },
+        { "name": "Iced Mocha", "price": 380 },
+        { "name": "Iced Matcha Latte", "price": 380 },
+        { "name": "Ingri Special Berry Burst (Vegan)", "price": 410 }
+      ]
+    },
+    {
+      "title": "BREAKFAST BOWLS",
+      "slug": "breakfast-bowls",
+      "items": [
+        { "name": "Very Berry Smoothie", "price": 750 },
+        { "name": "Supernut Butter Banana Oatmeal", "price": 650 },
+        { "name": "Almond Butter Chocolate Smoothie", "price": 650 },
+        { "name": "Fruit Bliss Probiotic Yogurt Bowl", "price": 600 },
+        { "name": "Winter Spiced Apple Oatmeal Bowl", "price": 620 }
+      ]
+    },
+    {
+      "title": "FREE RANGE EGGS",
+      "slug": "eggs",
+      "items": [
+        { "name": "Sunny Side Up", "price": 560 },
+        { "name": "Double Fried", "price": 560 },
+        { "name": "Classic Pan-Fried", "price": 560 },
+        { "name": "Classic Indie Masala", "price": 590 },
+        { "name": "Classic Rolled Omelette", "price": 560 },
+        { "name": "Belgian Ham & Cheese", "price": 650 },
+        { "name": "Cheese, Tomato & Spinach", "price": 610 },
+        { "name": "Mushroom Medley Sun-Dried Tomato", "price": 610 }
+      ]
+    },
+    {
+      "title": "BENEDICTS",
+      "slug": "benedicts",
+      "items": [
+        { "name": "Eggs Florentine", "price": 610 },
+        { "name": "The Original Benedict", "price": 690 },
+        { "name": "Eggs Royale", "price": 750 }
+      ]
+    },
+    {
+      "title": "SIGNATURE BREAKFAST",
+      "slug": "signature-breakfast",
+      "items": [
+        { "name": "Parsi Akuri", "price": 570 },
+        { "name": "Roasted Tomato Shakshuka", "price": 570 },
+        { "name": "Yogurt Pesto Eggs", "price": 570 },
+        { "name": "Royal Break-Feast Platter", "price": 1550 }
+      ]
+    },
+    {
+      "title": "PANCAKES & FRENCH TOAST",
+      "slug": "pancakes",
+      "items": [
+        { "name": "Butter & Maple Syrup", "price": 395 },
+        { "name": "Bananas & Berry Compote", "price": 450 },
+        { "name": "Ricotta Berry Compote", "price": 490 },
+        { "name": "Ice Cream & Hazelnut Drizzle", "price": 480 }
+      ]
+    },
+    {
+      "title": "ALL-DAY - SANDWICHES",
+      "slug": "sandwiches",
+      "items": [
+        { "name": "Ingri Veg Club Sandwich", "price": 680 },
+        { "name": "Ingri Chicken Club Sandwich", "price": 750 },
+        { "name": "Ham & Cheese Croissant Sandwich", "price": 750 },
+        { "name": "Ingri Basil Pesto Croissant Sandwich", "price": 680 }
+      ]
+    },
+    {
+      "title": "MULTIGRAIN OPEN TOASTS",
+      "slug": "open-toasts",
+      "items": [
+        { "name": "Guacamole, Radish, Pomegranate", "price": 610 },
+        { "name": "Bocconcini & Pesto", "price": 610 },
+        { "name": "Hummus & Harissa", "price": 610 },
+        { "name": "Cheese Medley", "price": 610 },
+        { "name": "Eggs & Guacamole", "price": 620 },
+        { "name": "Smoked Chicken", "price": 690 },
+        { "name": "Norwegian Smoked Salmon", "price": 750 },
+        { "name": "Battered Fried Shrimp", "price": 750 }
+      ]
+    },
+    {
+      "title": "SALADS",
+      "slug": "salads",
+      "items": [
+        { "name": "Ingri Signature Green Salad", "price": 675 },
+        { "name": "Tijuana Inspired Chicken Caesar", "price": 790 },
+        { "name": "Goat Cheese & Fig Salad", "price": 790 },
+        { "name": "Quinoa & Winter Roots Salad", "price": 700 },
+        { "name": "Bocconcini Apple & Lettuce Medley", "price": 700 },
+        { "name": "Asian Chicken Salad", "price": 720 },
+        { "name": "Add smoked chicken to green salad", "price": 250 }
+      ]
+    },
+    {
+      "title": "SOUPS",
+      "slug": "soups",
+      "items": [
+        { "name": "Pelati Tomato Basil", "price": 340 },
+        { "name": "Wild Mushroom & Truffle Duet", "price": 360 },
+        { "name": "Broccoli-Asparagus", "price": 350 },
+        { "name": "Hearty Chicken Soup", "price": 380 },
+        { "name": "Burmese Khao Suey", "price": 490 },
+        { "name": "Tom Yum Soup", "price": 380 }
+      ]
+    },
+    {
+      "title": "WOOD-FIRED PIZZAS",
+      "slug": "pizzas",
+      "items": [
+        { "name": "Quattro Formaggi Margherita", "price": 790 },
+        { "name": "Farmer’s Veggie", "price": 690 },
+        { "name": "Spinach & Caramelised Onion", "price": 690 },
+        { "name": "Trio of Mushroom", "price": 690 },
+        { "name": "Classic Sicilian Pepperoni", "price": 900 },
+        { "name": "BBQ Chicken", "price": 850 },
+        { "name": "Spanish Chorizo", "price": 950 },
+        { "name": "Pork Overload", "price": 950 },
+        { "name": "Peri-Peri Chicken Blaze", "price": 850 },
+        { "name": "Pesto & Chicken", "price": 850 }
+      ]
+    },
+    {
+      "title": "PASTA & RISOTTO",
+      "slug": "pasta",
+      "items": [
+        { "name": "Spaghetti Aglio Olio", "price": 600 },
+        { "name": "Carbonara", "price": 650 },
+        { "name": "Pine Nut Parmesan Basil Pesto", "price": 680 },
+        { "name": "Truffle Mushroom Fettuccine", "price": 690 },
+        { "name": "Chili Shrimp Linguini", "price": 750 },
+        { "name": "Penne Arrabbiata", "price": 650 },
+        { "name": "Cream & Cheese", "price": 670 },
+        { "name": "Pink Sauce", "price": 670 },
+        { "name": "Spinach & Ricotta Ravioli", "price": 730 },
+        { "name": "Mushroom & Sundried Tomato Ravioli", "price": 720 },
+        { "name": "Chicken Cherry Tomato & Spinach Risotto", "price": 780 },
+        { "name": "Shrimp & Asparagus Risotto", "price": 750 },
+        { "name": "Wild Fungi Risotto", "price": 680 },
+        { "name": "Add vegetables / chicken / shrimp", "price": 100 }
+      ]
+    },
+    {
+      "title": "BURGERS",
+      "slug": "burgers",
+      "items": [
+        { "name": "Shroom Burger", "price": 710 },
+        { "name": "Grilled Chicken Burger", "price": 750 },
+        { "name": "Lamb Cheeseburger", "price": 780 },
+        { "name": "Beetroot & Lotus Stem Burger", "price": 650 },
+        { "name": "Pulled Pork Burger", "price": 670 }
+      ]
+    },
+    {
+      "title": "LARGE PLATES",
+      "slug": "large-plates",
+      "items": [
+        { "name": "Chef’s Mushroom Polenta", "price": 690 },
+        { "name": "Grilled Corn Fed Chicken", "price": 890 },
+        { "name": "Traditional Fish & Chips", "price": 950 },
+        { "name": "Vietnamese Lemongrass Chicken", "price": 780 },
+        { "name": "Thai Curry (Veg)", "price": 690 },
+        { "name": "Thai Curry (Chicken)", "price": 790 },
+        { "name": "Thai Curry (Shrimp)", "price": 890 },
+        { "name": "Tom Yum Style Sea Bass", "price": 950 },
+        { "name": "Grilled Jumbo Prawns", "price": 1250 },
+        { "name": "French Shepherd’s Pie", "price": 1700 },
+        { "name": "Silk Road Tofu Curry", "price": 1150 },
+        { "name": "Taiwanese Braised Pork Belly", "price": 950 },
+        { "name": "Sri Lankan Shrimp Curry", "price": 950 },
+        { "name": "Korean Style Bibimbap", "price": 890 },
+        { "name": "Thai Krapao Chicken", "price": 790 },
+        { "name": "Deconstructed Burrito", "price": 750 }
+      ]
+    },
+    {
+      "title": "CLASSIC DESSERTS",
+      "slug": "desserts",
+      "items": [
+        { "name": "Dark Chocolate & Raspberry Cake", "price": 350 },
+        { "name": "Orange Cake with Marmalade", "price": 390 },
+        { "name": "Tiramisu", "price": 380 },
+        { "name": "Classic Cheesecake", "price": 450 },
+        { "name": "Lemon Ricotta Pie", "price": 350 },
+        { "name": "Chai Spiced Tres Leches", "price": 380 },
+        { "name": "Ingri Style Kunafa Chocolate", "price": 390 }
+      ]
+    },
+    {
+      "title": "HOUSE-MADE ICE CREAMS",
+      "slug": "ice-cream",
+      "items": [
+        { "name": "Madagascar Vanilla Bean", "price": 290 },
+        { "name": "Belgian Chocolate", "price": 290 },
+        { "name": "Coconut & Palm Jaggery Caramel (Vegan)", "price": 290 }
+      ]
+    }
+  ]
+}

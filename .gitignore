@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+# Ignore node_modules and build outputs
+node_modules/
+dist/
+build/
+.env
+.env.*
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+lerna-debug.log*
+
+# AWS deploy artifacts
+*.zip
+aws-backend/lambda/node_modules/
+aws-backend/node_modules/
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.env
+
+# AI and local artifacts
+.agents/
+graphify-out/
+run_graphify.py
+brain/

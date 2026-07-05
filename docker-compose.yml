@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  # The Main Customer Facing Website
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    restart: unless-stopped
+    depends_on:
+      - backend
+
+  # The Admin Dashboard Website
+  admin:
+    build:
+      context: ./admin
+      dockerfile: Dockerfile
+    ports:
+      - "3001:80"
+    restart: unless-stopped
+    depends_on:
+      - backend
+
+  # The Node.js Express API
+  backend:
+    build:
+      context: ./aws-backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./aws-backend/.env
+    restart: unless-stopped
+
+# Note: We are not running the Neon PostgreSQL database in Docker here 
+# because Neon is a hosted cloud database. The backend will connect directly 
+# to the remote Neon DB using the DATABASE_URL in the .env file.

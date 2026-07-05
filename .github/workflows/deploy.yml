@@ -1,0 +1,54 @@
+name: Deploy Backend to AWS EC2
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'aws-backend/**' # Only trigger if backend code changes
+
+jobs:
+  deploy:
+    name: Deploy to EC2
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Debug Secrets (Check if empty)
+        run: |
+          if [ -z "${{ secrets.EC2_HOST }}" ]; then echo "❌ EC2_HOST is MISSING!"; else echo "✅ EC2_HOST is set"; fi
+          if [ -z "${{ secrets.EC2_USERNAME }}" ]; then echo "❌ EC2_USERNAME is MISSING!"; else echo "✅ EC2_USERNAME is set"; fi
+          if [ -z "${{ secrets.EC2_SSH_KEY }}" ]; then echo "❌ EC2_SSH_KEY is MISSING!"; else echo "✅ EC2_SSH_KEY is set"; fi
+
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            # 1. Navigate to the project directory or clone it
+            if [ ! -d "/home/${{ secrets.EC2_USERNAME }}/ingri-world/.git" ]; then
+              echo "Cloning repository..."
+              git clone https://github.com/${{ github.repository }}.git /home/${{ secrets.EC2_USERNAME }}/ingri-world
+            fi
+            
+            cd /home/${{ secrets.EC2_USERNAME }}/ingri-world
+            
+            # 2. Pull the latest code
+            git pull origin main
+            
+            # 3. Install dependencies and restart
+            cd aws-backend
+            npm install
+            
+            # 4. Generate Prisma Client & DB Push
+            npx prisma generate
+            npx prisma db push --accept-data-loss
+            
+            # 5. Start or Restart PM2 Cluster
+            pm2 start ecosystem.config.cjs --env production || pm2 reload ecosystem.config.cjs --env production
+

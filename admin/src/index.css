@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #fafafa;
+  color: #1a1a1a;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
+
+/* Table styles */
+.admin-table th {
+  @apply text-left text-[11px] font-semibold text-gray-400 uppercase tracking-wider px-4 py-3 bg-gray-50/80 border-b border-gray-100;
+}
+.admin-table td {
+  @apply px-4 py-3 text-sm text-gray-600 border-b border-gray-50;
+}
+.admin-table tbody tr:hover td {
+  @apply bg-gray-50/50;
+}
+
+/* Status badges */
+.badge {
+  @apply inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium;
+}
+.badge-green { @apply bg-emerald-50 text-emerald-600; }
+.badge-yellow { @apply bg-amber-50 text-amber-600; }
+.badge-red { @apply bg-red-50 text-red-600; }
+.badge-blue { @apply bg-blue-50 text-blue-600; }
+.badge-gray { @apply bg-gray-50 text-gray-500; }
+.badge-purple { @apply bg-purple-50 text-purple-600; }
